@@ -1,12 +1,9 @@
 {
   "name": "ultra-andy-videos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ultra Andy - Videos que funcionan",
   "scripts": {
-    "build": "echo 'Static site'",
-    "dev": "python3 -m http.server 3000"
-  },
-  "engines": {
-    "node": "18.x"
+    "build": "echo 'Building static site...'",
+    "start": "echo 'Static site ready'"
   }
 }
