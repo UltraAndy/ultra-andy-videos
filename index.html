@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Andy - Videos que funcionan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #FFFFFF; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; overflow-x: hidden; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.25s; }
+        .delay-3 { animation-delay: 0.4s; }
+        .delay-4 { animation-delay: 0.55s; }
+        .hero-bg { background: linear-gradient(135deg, #FFFFFF 0%, #F9F9F9 100%); min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; }
+        .hero-accent { position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255, 107, 53, 0.08) 0%, transparent 70%); border-radius: 50%; top: -200px; right: -200px; z-index: 0; }
+        .card { transition: all 0.3s ease; }
+        .card:hover { transform: translateY(-8px); }
+        .card-boost { box-shadow: 0 20px 60px rgba(255, 107, 53, 0.2); }
+        .card-boost:hover { box-shadow: 0 30px 80px rgba(255, 107, 53, 0.3); transform: translateY(-12px) scale(1.02); }
+        .badge { display: inline-block; background: #FF6B35; color: white; padding: 8px 16px; border-radius: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 16px; text-transform: uppercase; }
+        .hero-title { font-size: 64px; font-weight: 700; line-height: 1.1; color: #000000; letter-spacing: -1.5px; }
+        .section-title { font-size: 48px; font-weight: 700; color: #000000; letter-spacing: -1px; }
+        .price { font-size: 64px; font-weight: 700; color: #FF6B35; line-height: 1; margin-bottom: 8px; }
+        .price-sm { font-size: 48px; font-weight: 700; color: #FF6B35; }
+        .feature-item::before { content: "✓"; color: #FF6B35; font-weight: 700; margin-right: 8px; }
+        .gradient-text { background: linear-gradient(135deg, #FF6B35, #FF8555); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .image-container { position: relative; height: 500px; background: linear-gradient(135deg, #F5F5F5 0%, #EFEFEF 100%); border-radius: 24px; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid #E0E0E0; }
+        .divider { border-top: 1px solid #E0E0E0; height: 16px; }
+        .divider-boost { border-top: 1px solid #FFE5D5; height: 20px; }
+        .stat-number { font-size: 40px; font-weight: 700; color: #FF6B35; line-height: 1; margin-bottom: 8px; }
+        .stat-label { font-size: 13px; color: #999999; text-transform: uppercase; letter-spacing: 1px; }
+        @media (max-width: 768px) { .hero-title { font-size: 40px; } .section-title { font-size: 32px; } .price { font-size: 48px; } .price-sm { font-size: 36px; } .image-container { height: 350px; } }
+        .scroll-animate { opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }
+        .scroll-animate.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+<nav class="sticky top-0 bg-white/95 backdrop-blur-md z-50 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold tracking-tight"><span class="gradient-text">Ultra</span> Andy</h1>
+        <a href="#pricing" class="text-sm font-medium text-gray-600 hover:text-black transition">Ver paquetes</a>
+    </div>
+</nav>
+
+<section class="hero-bg">
+    <div class="hero-accent"></div>
+    <div class="max-w-6xl mx-auto px-6 md:px-12 py-20 md:py-32 relative z-10">
+        <div class="mb-12">
+            <h1 class="hero-title fade-in-up mb-6">Videos que funcionan.<br><span class="gradient-text">Estrategia que vende.</span></h1>
+            <p class="text-xl md:text-2xl text-gray-600 max-w-2xl fade-in-up delay-1 leading-relaxed">Contenido visual que convierte. Grabado con tecnología cinematográfica, entregado en 24 horas.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-16 items-center mt-20">
+            <div class="space-y-8 fade-in-up delay-2">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">¿Qué está incluido?</h3>
+                    <div class="space-y-3">
+                        <p class="text-base text-gray-600"><span class="feature-item"></span>Grabación con iPhone 17 Pro Max + Blackmagic</p>
+                        <p class="text-base text-gray-600"><span class="feature-item"></span>Iluminación cinematográfica profesional</p>
+                        <p class="text-base text-gray-600"><span class="feature-item"></span>Micrófono profesional + sonido limpio</p>
+                        <p class="text-base text-gray-600"><span class="feature-item"></span>Edición de color + color grading</p>
+                        <p class="text-base text-gray-600"><span class="feature-item"></span>Asesoría estratégica incluida</p>
+                        <p class="text-base text-gray-600"><span class="feature-item"></span>Entrega en máxima calidad</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-6 pt-8">
+                    <div class="text-center">
+                        <div class="stat-number">24h</div>
+                        <div class="stat-label">Entrega rápida</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number">4K</div>
+                        <div class="stat-label">Máxima calidad</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Revisiones</div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container fade-in-up delay-3 flex items-center justify-center">
+                <div class="text-center">
+                    <img src="/public/iphone-17-pro-max-orange.webp" alt="iPhone 17 Pro Max" class="w-48 h-auto mx-auto mb-4 object-contain">
+                    <p class="font-medium text-gray-600">iPhone 17 Pro Max<br><span class="text-sm">+ Blackmagic</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 md:py-32 px-6 md:px-12 bg-white">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16 fade-in-up">
+            <span class="badge">CONTENIDO DIRECTO</span>
+            <h2 class="section-title mt-4 mb-6">Rápido, ágil, que funciona hoy</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Para marcas que necesitan contenido constante en redes. Grabamos, editamos y entregas al día siguiente.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 mb-16 fade-in-up delay-2">
+            <div class="card bg-white p-10 rounded-2xl border border-gray-200 opacity-80 scroll-animate">
+                <h3 class="text-2xl font-bold mb-2">Essential</h3>
+                <div class="price-sm">$60</div>
+                <p class="text-sm text-gray-400 mb-8 font-medium">3 videos mensuales</p>
+                <div class="divider"></div>
+                <div class="space-y-2 pt-6 text-sm text-gray-600">
+                    <p><span class="feature-item"></span>Grabación orgánica</p>
+                    <p><span class="feature-item"></span>Reels y TikTok</p>
+                    <p><span class="feature-item"></span>Flujo ágil</p>
+                </div>
+            </div>
+            <div class="card-boost card bg-white p-12 rounded-2xl border-2 border-orange-600 scale-105 shadow-2xl scroll-animate delay-1">
+                <div class="badge mb-6">✓ MÁS ELEGIDO</div>
+                <h3 class="text-3xl font-bold mb-2">Boost</h3>
+                <div class="price">$140</div>
+                <p class="text-sm font-bold text-orange-600 mb-10">6 videos mensuales</p>
+                <div class="divider-boost"></div>
+                <div class="space-y-3 pt-6 mb-8 text-gray-800 font-medium">
+                    <p><span class="feature-item"></span>Grabación orgánica</p>
+                    <p><span class="feature-item"></span>Reels y TikTok</p>
+                    <p><span class="feature-item"></span>Flujo ágil + Asesoría</p>
+                </div>
+                <p class="text-sm font-bold text-orange-600 text-center">El mejor valor para crecer rápido</p>
+            </div>
+            <div class="card bg-white p-10 rounded-2xl border border-gray-200 opacity-80 scroll-animate delay-2">
+                <h3 class="text-2xl font-bold mb-2">Growth</h3>
+                <div class="price-sm">$95</div>
+                <p class="text-sm text-gray-400 mb-8 font-medium">3 videos mensuales</p>
+                <div class="divider"></div>
+                <div class="space-y-2 pt-6 text-sm text-gray-600">
+                    <p><span class="feature-item"></span>Grabación orgánica</p>
+                    <p><span class="feature-item"></span>Reels y TikTok</p>
+                    <p><span class="feature-item"></span>Flujo ágil</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mb-16 fade-in-up delay-3">
+            <div class="card bg-white p-10 rounded-2xl border border-gray-200 opacity-80 md:max-w-sm w-full scroll-animate">
+                <h3 class="text-2xl font-bold mb-2">Max</h3>
+                <div class="price-sm">$180</div>
+                <p class="text-sm text-gray-400 mb-8 font-medium">8 videos mensuales</p>
+                <div class="divider"></div>
+                <div class="space-y-2 pt-6 text-sm text-gray-600">
+                    <p><span class="feature-item"></span>Grabación orgánica</p>
+                    <p><span class="feature-item"></span>Reels y TikTok</p>
+                    <p><span class="feature-item"></span>Flujo ágil + Asesoría</p>
+                </div>
+            </div>
+        </div>
+        <p class="text-sm text-gray-400 text-center fade-in-up delay-4">Todos incluyen grabación profesional, iluminación, micrófono, edición de color y asesoramiento estratégico.</p>
+    </div>
+</section>
+
+<section class="py-24 md:py-32 px-6 md:px-12 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16 fade-in-up">
+            <span class="badge">PRODUCCIÓN PREMIUM</span>
+            <h2 class="section-title mt-4 mb-6">Impacto cinematográfico</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Cuando necesitas presencia premium. Cámara profesional, equipamiento cinematográfico completo.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 mb-16 fade-in-up delay-2">
+            <div class="card bg-white p-10 rounded-2xl border border-gray-200 scroll-animate">
+                <h3 class="text-2xl font-bold mb-2">Studio</h3>
+                <div class="price-sm">$220</div>
+                <p class="text-sm text-gray-400 mb-8 font-medium">4 videos mensuales</p>
+                <div class="divider"></div>
+                <div class="space-y-2 pt-6 text-sm text-gray-600 font-medium">
+                    <p><span class="feature-item"></span>Cámara profesional Sony A7IV</p>
+                    <p><span class="feature-item"></span>Cinematografía gama alta</p>
+                    <p><span class="feature-item"></span>Producción completa</p>
+                </div>
+            </div>
+            <div class="card bg-white p-10 rounded-2xl border border-gray-200 scroll-animate delay-1">
+                <h3 class="text-2xl font-bold mb-2">Signature</h3>
+                <div class="price-sm">$300</div>
+                <p class="text-sm text-gray-400 mb-8 font-medium">6 videos mensuales</p>
+                <div class="divider"></div>
+                <div class="space-y-2 pt-6 text-sm text-gray-600 font-medium">
+                    <p><span class="feature-item"></span>Cámara profesional Sony A7IV</p>
+                    <p><span class="feature-item"></span>Cinematografía gama alta</p>
+                    <p><span class="feature-item"></span>Producción completa</p>
+                </div>
+            </div>
+            <div class="card bg-white p-10 rounded-2xl border border-gray-200 scroll-animate delay-2">
+                <h3 class="text-2xl font-bold mb-2">Ultra</h3>
+                <div class="price-sm">$420</div>
+                <p class="text-sm text-gray-400 mb-8 font-medium">8 videos mensuales</p>
+                <div class="divider"></div>
+                <div class="space-y-2 pt-6 text-sm text-gray-600 font-medium">
+                    <p><span class="feature-item"></span>Cámara profesional Sony A7IV</p>
+                    <p><span class="feature-item"></span>Cinematografía gama alta</p>
+                    <p><span class="feature-item"></span>Producción completa</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white p-10 rounded-2xl border border-gray-200 max-w-3xl mx-auto fade-in-up delay-3">
+            <h3 class="text-2xl font-bold mb-4">¿Cuándo elegir Premium?</h3>
+            <p class="text-gray-700 leading-relaxed">Elige Producción Premium cuando necesites impacto máximo: lanzamientos de producto, presencia corporativa, contenido que vive años no semanas. Ideal cuando el aspecto visual es tu ventaja competitiva.</p>
+        </div>
+        <p class="text-sm text-gray-400 text-center mt-12 fade-in-up delay-4">Todos incluyen equipo cinematográfico, iluminación premium, micrófono profesional, edición de color y asesoramiento.</p>
+    </div>
+</section>
+
+<section class="py-24 md:py-32 px-6 md:px-12 bg-white">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="section-title text-center mb-16 fade-in-up">¿Cuál es la diferencia?</h2>
+        <div class="grid md:grid-cols-2 gap-12 fade-in-up delay-2">
+            <div class="space-y-6">
+                <div class="h-64 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl border border-blue-200 flex items-center justify-center mb-8">
+                    <div class="text-center">
+                        <svg class="w-24 h-24 mx-auto mb-4" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="150" fill="#f5f5f5"/>
+                            <rect x="10" y="7" width="80" height="135" rx="12" fill="#1a1a1a" stroke="#000" stroke-width="0.5"/>
+                            <rect x="14" y="12" width="72" height="115" rx="10" fill="#fff"/>
+                            <rect x="37" y="12" width="25" height="8" rx="4" fill="#1a1a1a"/>
+                            <circle cx="50" cy="135" r="4" fill="#1a1a1a"/>
+                        </svg>
+                        <p class="text-gray-600 font-medium text-sm">iPhone 17 Pro Max</p>
+                    </div>
+                </div>
+                <h3 class="text-3xl font-bold">Contenido Directo</h3>
+                <div class="space-y-3">
+                    <p class="text-base text-gray-600"><span class="feature-item"></span>Rápido (24-48 horas)</p>
+                    <p class="text-base text-gray-600"><span class="feature-item"></span>Orgánico y auténtico</p>
+                    <p class="text-base text-gray-600"><span class="feature-item"></span>Perfecto para redes</p>
+                    <p class="text-base text-gray-600"><span class="feature-item"></span>iPhone 17 Pro Max</p>
+                    <p class="text-base text-gray-600"><span class="feature-item"></span>Ideal para volumen</p>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <div class="h-64 bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl border border-orange-200 flex items-center justify-center mb-8">
+                    <div class="text-center">
+                        <img src="/public/sony-a7iv.jpg" alt="Sony A7IV" class="h-48 object-contain mx-auto mb-4">
+                        <p class="text-gray-600 font-medium text-sm">Sony A7IV</p>
+                    </div>
+                </div>
+                <h3 class="text-3xl font-bold">Producción Premium</h3>
+                <div class="space-y-3">
+                    <p class="text-base text-gray-600"><span class="feature-item"></span>Cinematográfico</p>
+                    <p class="text-base text-gray-600"><span class="feature-item"></span>4K profesional</p>
+                    <p class="text-base text-gray-600"><span class="feature-item"></span>Impacto visual máximo</p>
+                    <p class="text-base text-gray-600"><span class="feature-item"></span>Sony A7IV</p>
+                    <p class="text-base text-gray-600"><span class="feature-item"></span>Perfecto para presencia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 md:py-28 px-6 md:px-12 bg-gradient-to-br from-gray-900 to-black text-white">
+    <div class="max-w-3xl mx-auto text-center fade-in-up">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">¿Listo para comenzar?</h2>
+        <p class="text-xl text-gray-300 mb-10">Escoge el paquete que mejor se adapte a tu marca y contáctame.</p>
+        <a href="https://wa.me/593978636185?text=Hola%20Andy%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20tus%20paquetes%20de%20video" class="inline-block bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-lg font-bold text-lg transition transform hover:scale-105 duration-300">
+            Contáctame por WhatsApp
+        </a>
+    </div>
+</section>
+
+<footer class="py-12 px-6 md:px-12 bg-white border-t border-gray-100">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <h3 class="text-lg font-bold mb-4">Ultra Andy</h3>
+                <p class="text-gray-600">Videos que funcionan. Estrategia que vende.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Ubicación</h4>
+                <p class="text-gray-600">Machala, El Oro<br>Ecuador</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Contacto</h4>
+                <a href="https://wa.me/593978636185" class="text-orange-600 hover:text-orange-700 font-medium">+593 978 636 185</a>
+            </div>
+        </div>
+        <div class="border-t border-gray-100 pt-8 text-center text-sm text-gray-500">
+            <p>© 2026 Ultra Andy Filmmaker. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -100px 0px' };
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+    document.querySelectorAll('.scroll-animate').forEach(element => {
+        observer.observe(element);
+    });
+</script>
+
+</body>
+</html>
