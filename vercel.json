@@ -1,6 +1,10 @@
 {
-  "buildCommand": null,
-  "outputDirectory": null,
-  "devCommand": null,
-  "installCommand": null
+  "buildCommand": "echo 'Static site'",
+  "outputDirectory": ".",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }
